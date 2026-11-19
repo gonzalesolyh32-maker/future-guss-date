@@ -6,7 +6,8 @@
         justify-content: center;
 align-items: center;
 height: 85vh;
-        background-color: black;
+background-color: black;
+        
         }
         button {
             margin:auto;
@@ -17,7 +18,8 @@ height: 85vh;
             border: 2px solid grey;
             border-radius: 15px;
             background: transparent;
-            color: aqua;
+            color: cyan;
+            
 
             box-shadow: 
             0 0 10px cyan,
@@ -26,7 +28,7 @@ height: 85vh;
             transition: 2s;
         }
         button :hover{
-            background: cyan;
+            background: aqua;
             color: black;
         }
         p {
@@ -36,25 +38,43 @@ height: 85vh;
             left:1;
         
         }
-        
+        a {
+            padding-top: ;
+        }
+        #result {
+            margin: auto;
+        }
         
 </style>
 </head>
-<p>hello</p>
+
 
 <head>
 
-<p>hoy pindotin mo yung button!!!!</p>
+<p>hoy pindotin mo yung buttonpara di mo makalimutan ang date bukas
+</p>
 </head>
 <html>
 <body>
-    <button><h3>click me!</h3></button>
+    <button onclick="showDate()" ><h3>click me!</h3></button>
 
-
+<a href="https://boorat.com">boorat</a>
     
+    <p id="result"></p>
+
+    <script>
+        function showDate() {
+            const tomorrow = new Date();
+
+            tomorrow.setDate(tomorrow.getDate() + 1);
+
+            document.getElementById("result").innerHTML =
+                tomorrow.toDateString();
+        }
+    </script>
     
 </body>
 <script>
-    alert(boii ang laki ng boorat ko!!!!!)
+    alert("boii ang laki ng boorat ko!!!!!")
 </script>
 </html>
